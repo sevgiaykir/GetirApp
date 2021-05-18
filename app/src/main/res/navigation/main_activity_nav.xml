@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homepageFragment">
+
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.sevgiaykir.getirapp.HomepageFragment"
+        android:label="HomepageFragment"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/detailPageTransition"
+            app:destination="@id/detailPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPageFragment"
+        android:name="com.sevgiaykir.getirapp.DetailPageFragment"
+        android:label="DetailPageFragment"
+        tools:layout="@layout/fragment_detail_page">
+        <argument
+            android:name="categoryObject"
+            app:argType="com.sevgiaykir.getirapp.Categories" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPageFragment"
+        android:name="com.sevgiaykir.getirapp.SearchPageFragment"
+        android:label="fragment_search_page"
+        tools:layout="@layout/fragment_search_page" />
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.sevgiaykir.getirapp.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
+    <fragment
+        android:id="@+id/campaignPageFragment"
+        android:name="com.sevgiaykir.getirapp.CampaignPageFragment"
+        android:label="fragment_campaign_page"
+        tools:layout="@layout/fragment_campaign_page" />
+    <fragment
+        android:id="@+id/announcementsFragment"
+        android:name="com.sevgiaykir.getirapp.AnnouncementsFragment"
+        android:label="fragment_announcements"
+        tools:layout="@layout/fragment_announcements" />
+</navigation>

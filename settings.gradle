@@ -1,0 +1,2 @@
+rootProject.name = "GetirApp"
+include ':app'
