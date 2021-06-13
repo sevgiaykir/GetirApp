@@ -23,7 +23,7 @@ class CampaignPageFragment : Fragment() {
         design =
             DataBindingUtil.inflate(inflater, R.layout.fragment_campaign_page, container, false)
 
-        (activity as AppCompatActivity).setSupportActionBar(design.toolbarCampaignPage)
+        //(activity as AppCompatActivity).setSupportActionBar(design.toolbarCampaignPage)
 
         design.buttonCampSave.setOnClickListener {
             Snackbar.make(it,"Kampanya kodu kaydedildi.",Snackbar.LENGTH_LONG).show()

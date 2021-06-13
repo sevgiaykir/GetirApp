@@ -38,9 +38,4 @@
         android:name="com.sevgiaykir.getirapp.CampaignPageFragment"
         android:label="fragment_campaign_page"
         tools:layout="@layout/fragment_campaign_page" />
-    <fragment
-        android:id="@+id/announcementsFragment"
-        android:name="com.sevgiaykir.getirapp.AnnouncementsFragment"
-        android:label="fragment_announcements"
-        tools:layout="@layout/fragment_announcements" />
 </navigation>

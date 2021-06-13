@@ -22,7 +22,7 @@ class SearchPageFragment : Fragment() {
         design =
             DataBindingUtil.inflate(inflater, R.layout.fragment_search_page, container, false)
 
-        (activity as AppCompatActivity).setSupportActionBar(design.toolbarSearchPage)
+        //(activity as AppCompatActivity).setSupportActionBar(design.toolbarSearchPage)
 
         return design.root
     }
