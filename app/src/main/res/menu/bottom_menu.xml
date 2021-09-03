@@ -8,9 +8,6 @@
         android:id="@+id/searchPageFragment"
         android:icon="@drawable/search" />
     <item
-        android:id="@+id/navigationPageFragment"
-        android:icon="@drawable/navigation" />
-    <item
         android:id="@+id/profilePageFragment"
         android:icon="@drawable/profile" />
     <item

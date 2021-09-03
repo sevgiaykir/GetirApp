@@ -24,6 +24,10 @@ class CategoriesAdapter(var mContext:Context, var categoryList:List<Categories>)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardDesignHolder {
         val layoutInflater=LayoutInflater.from(mContext)
         val design=CardDesignBinding.inflate(layoutInflater,parent,false)
+
+        design.textViewCatName.setOnClickListener {
+            println("Categori adına basıldı")
+        }
         return CardDesignHolder(design)
     }
 
